@@ -1096,3 +1096,219 @@ footer p + p {
     }
 
 }
+
+/* ==================================================
+   RELEASE DETAIL
+================================================== */
+
+.release-detail {
+    width: min(1000px, calc(100% - 60px));
+    margin: 150px auto 0;
+    padding-bottom: 120px;
+}
+
+
+/* ページ上部 */
+
+.release-detail-heading {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.release-number {
+    margin: 0 0 12px;
+
+    color: #a18eae;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.release-detail-heading h1 {
+    margin: 0;
+
+    font-size: clamp(38px, 6vw, 64px);
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+
+.release-date {
+    margin-top: 15px;
+
+    color: #99919d;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+
+/* ジャケットと作品情報 */
+
+.release-detail-content {
+    display: grid;
+    grid-template-columns: 400px minmax(0, 1fr);
+    gap: 75px;
+    align-items: start;
+}
+
+
+/* ジャケット未設定時 */
+
+.jacket-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    color: #aaa1ae;
+    background:
+        linear-gradient(
+            135deg,
+            #eee7f2,
+            #fbf9fc
+        );
+
+    border: 1px solid #e6dfe9;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+
+/* 説明文 */
+
+.release-introduction {
+    margin: 0 0 50px;
+
+    color: #5e5763;
+    font-size: 14px;
+    line-height: 2.2;
+}
+
+
+/* 小見出し */
+
+.detail-label {
+    margin: 0 0 18px;
+
+    color: #9e8aaa;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+
+/* 収録曲 */
+
+.tracklist {
+    margin-bottom: 45px;
+}
+
+.tracklist ol {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    border-top: 1px solid #e5dfe7;
+}
+
+.tracklist li {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+
+    padding: 15px 3px;
+
+    border-bottom: 1px solid #e5dfe7;
+
+    font-size: 13px;
+}
+
+.tracklist li span {
+    color: #aaa2ad;
+    font-size: 11px;
+}
+
+
+/* センター情報 */
+
+.release-credit {
+    padding-top: 5px;
+}
+
+.release-credit p:last-child {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* 下部ナビゲーション */
+
+.release-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 90px;
+}
+
+.next-release {
+    color: #4f4754;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.next-release:hover {
+    opacity: 0.5;
+}
+
+
+/* スマートフォン */
+
+@media (max-width: 700px) {
+
+    .release-detail {
+        width: min(100% - 48px, 500px);
+        margin-top: 110px;
+        padding-bottom: 90px;
+    }
+
+    .release-detail-heading {
+        margin-bottom: 45px;
+    }
+
+    .release-detail-heading h1 {
+        font-size: 36px;
+        letter-spacing: 4px;
+    }
+
+    .release-detail-content {
+        display: block;
+    }
+
+    .release-detail-image {
+        width: 78%;
+        max-width: 300px;
+        margin: 0 auto 45px;
+    }
+
+    .release-introduction {
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .release-navigation {
+        margin-top: 65px;
+    }
+
+    .release-navigation .button {
+        padding: 11px 15px;
+        font-size: 9px;
+    }
+
+    .next-release {
+        font-size: 9px;
+    }
+
+}
