@@ -2447,3 +2447,59 @@ footer p + p {
     }
 
 }
+
+/* =========================================
+   PAST ARTIST PHOTO
+========================================= */
+
+.member-sub-photo-gallery {
+    margin-top: 28px;
+    text-align: left;
+}
+
+.member-photo-label {
+    margin: 0 0 10px;
+
+    color: #99909d;
+
+    font-size: 8px;
+    letter-spacing: 2.5px;
+}
+
+.member-sub-photo {
+    display: block;
+
+    width: 120px;
+    height: 150px;
+
+    object-fit: cover;
+    object-position: center top;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 8px 22px
+        rgba(60, 50, 65, 0.08);
+
+    transition: transform 0.3s;
+}
+
+.member-sub-photo:hover {
+    transform: scale(1.04);
+}
+
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .member-sub-photo-gallery {
+        margin-top: 20px;
+    }
+
+    .member-sub-photo {
+        width: 100px;
+        height: 125px;
+    }
+
+}
