@@ -1654,3 +1654,32 @@ footer p + p {
     }
 
 }
+
+.formation-link-area {
+    margin-top: 35px;
+}
+
+.formation-view-button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    color: #615368;
+    background: #ffffff;
+
+    border: 1px solid #cdbed5;
+    border-radius: 100px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    transition:
+        color 0.3s,
+        background-color 0.3s;
+}
+
+.formation-view-button:hover {
+    color: #ffffff;
+    background: #a890b6;
+}
