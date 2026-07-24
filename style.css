@@ -1918,3 +1918,532 @@ footer p + p {
     }
 
 }
+
+/* ==================================================
+   6TH SINGLE FORMATION
+   SELECT / RISE
+================================================== */
+
+
+/* SELECT・RISE切り替え */
+
+.formation-switch {
+
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+
+    margin: 0 auto 55px;
+
+}
+
+
+.formation-tab {
+
+    min-width: 150px;
+
+    padding: 14px 28px;
+
+    background: #ffffff;
+
+    color: #777078;
+
+    border: 1px solid #ded7e2;
+    border-radius: 100px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s,
+        color 0.3s,
+        border 0.3s,
+        transform 0.3s;
+
+}
+
+
+.formation-tab:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.formation-tab.is-active {
+
+    color: #ffffff;
+
+    background: #a38bb0;
+
+    border-color: #a38bb0;
+
+}
+
+
+
+/* フォーメーション切り替え */
+
+.formation-panel {
+
+    display: none;
+
+}
+
+
+.formation-panel.is-active {
+
+    display: block;
+
+    animation: formation-fade 0.45s ease;
+
+}
+
+
+@keyframes formation-fade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+/* SELECT / RISE タイトル */
+
+.formation-category-heading {
+
+    margin-bottom: 35px;
+
+    text-align: center;
+
+}
+
+
+.formation-category-heading p {
+
+    margin: 0 0 8px;
+
+    color: #a393aa;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.formation-category-heading h2 {
+
+    margin: 0;
+
+    color: #4e4753;
+
+    font-size: 28px;
+
+    font-weight: 400;
+
+    letter-spacing: 3px;
+
+}
+
+
+
+/* ==================================================
+   アー写付きフォーメーション
+================================================== */
+
+.formation-stage-photo {
+
+    padding:
+
+        45px
+        20px
+        50px;
+
+    overflow-x: auto;
+
+}
+
+
+.formation-row-photo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.formation-member-photo {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 125px;
+
+    color: #403947;
+
+    text-decoration: none;
+
+    transition:
+
+        transform 0.3s,
+        opacity 0.3s;
+
+}
+
+
+.formation-member-photo:hover {
+
+    transform: translateY(-6px);
+
+}
+
+
+
+/* アー写 */
+
+.formation-member-photo img {
+
+    display: block;
+
+    width: 108px;
+
+    height: 138px;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    background: #f7f4f8;
+
+    border:
+
+        2px solid
+        #ece7ef;
+
+    border-radius: 12px;
+
+    box-shadow:
+
+        0 10px 24px
+        rgba(
+            70,
+            56,
+            79,
+            0.10
+        );
+
+}
+
+
+
+/* 名前 */
+
+.formation-member-photo strong {
+
+    margin-top: 10px;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+}
+
+
+
+/* 前列 */
+
+.formation-member-photo.front-member img {
+
+    width: 116px;
+
+    height: 148px;
+
+}
+
+
+
+/* ==================================================
+   CENTER
+================================================== */
+
+.formation-member-photo.center-member {
+
+    transform: translateY(-5px);
+
+}
+
+
+.formation-member-photo.center-member:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.formation-member-photo.center-member img {
+
+    border:
+
+        3px solid
+        #a88ab8;
+
+    box-shadow:
+
+        0 0 0 5px
+        rgba(
+            172,
+            143,
+            188,
+            0.13
+        ),
+
+        0 15px 32px
+        rgba(
+            87,
+            66,
+            100,
+            0.18
+        );
+
+}
+
+
+.center-label {
+
+    margin-top: 10px;
+
+    color: #9674a8;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* ==================================================
+   RISE COMING SOON
+================================================== */
+
+.rise-coming-soon {
+
+    width: min(
+        760px,
+        100%
+    );
+
+    margin:
+
+        0 auto
+        45px;
+
+    padding:
+
+        100px
+        30px;
+
+    text-align: center;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #faf7fc,
+            #ffffff
+        );
+
+    border:
+
+        1px solid
+        #e7e0ea;
+
+}
+
+
+.rise-label {
+
+    margin:
+
+        0 0
+        14px;
+
+    color: #a18fa9;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.rise-coming-soon h3 {
+
+    margin:
+
+        0 0
+        25px;
+
+    color: #655c6a;
+
+    font-size:
+
+        clamp(
+            30px,
+            5vw,
+            48px
+        );
+
+    font-weight: 400;
+
+    letter-spacing: 6px;
+
+}
+
+
+.rise-coming-soon p:last-child {
+
+    margin: 0;
+
+    color: #7d7580;
+
+    font-size: 13px;
+
+    line-height: 2;
+
+}
+
+
+
+/* ==================================================
+   スマホ
+================================================== */
+
+@media (max-width: 700px) {
+
+
+    .formation-switch {
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .formation-tab {
+
+        min-width: 125px;
+
+        padding:
+
+            12px
+            18px;
+
+        font-size: 9px;
+
+    }
+
+
+    .formation-stage-photo {
+
+        padding:
+
+            30px
+            10px
+            40px;
+
+    }
+
+
+    .formation-row-photo {
+
+        justify-content: flex-start;
+
+        min-width: max-content;
+
+        gap: 12px;
+
+        margin-bottom: 24px;
+
+    }
+
+
+    .formation-member-photo {
+
+        width: 94px;
+
+    }
+
+
+    .formation-member-photo img {
+
+        width: 78px;
+
+        height: 102px;
+
+    }
+
+
+    .formation-member-photo.front-member img {
+
+        width: 84px;
+
+        height: 110px;
+
+    }
+
+
+    .formation-member-photo strong {
+
+        font-size: 10px;
+
+    }
+
+
+    .rise-coming-soon {
+
+        padding:
+
+            70px
+            20px;
+
+    }
+
+}
