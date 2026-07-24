@@ -1777,3 +1777,14 @@ footer p + p {
     }
 
 }
+
+.release-detail-jacket {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    border: 1px solid #e6dfe9;
+    box-shadow: 0 15px 35px rgba(77, 61, 87, 0.1);
+}
