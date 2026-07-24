@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>一条 莉子 | Fiora Official Website</title>
+    <meta name="description" content="Fiora 1期生・一条莉子の公式プロフィールページです。">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="member-profile-page">
 
     <!-- ヘッダー -->
     <header class="site-header">
 
-        <a href="index.html" class="logo">
-            Fiora
-        </a>
+        <a href="index.html" class="logo">Fiora</a>
 
-        <nav>
+        <nav class="header-nav">
             <a href="index.html">HOME</a>
             <a href="index.html#news">NEWS</a>
             <a href="members.html">MEMBERS</a>
@@ -30,72 +30,88 @@
 
     <main>
 
-        <!-- メインプロフィール -->
-        <section class="profile">
+        <!-- プロフィール -->
+        <section class="member-hero">
 
-            <div class="profile-image">
-                <img src="riko-ichijo.jpg.png" alt="一条莉子">
+            <div class="member-photo-area">
+
+                <!-- 画像名が違う場合はここを変更 -->
+                <img
+                    src="riko-ichijo.jpg.png"
+                    alt="一条莉子のアーティスト写真"
+                    class="member-artist-photo"
+                >
+
             </div>
 
 
-            <div class="profile-content">
+            <div class="member-information">
 
-                <p class="member-position">
+                <p class="member-generation">
                     1ST GENERATION / CAPTAIN
                 </p>
 
-                <h1>一条 莉子</h1>
+                <h1 class="member-name">
+                    一条 莉子
+                </h1>
 
-                <p class="english-name">
+                <p class="member-name-english">
                     RIKO ICHIJO
                 </p>
 
-                <p class="catchphrase">
-                    「みんなと咲かせる、私たちだけの花を。」
+                <p class="member-catchphrase">
+                    みんなと咲かせる、私たちだけの花を。
                 </p>
 
 
-                <div class="profile-table">
+                <div class="official-profile">
 
-                    <div>
-                        <span>生年月日</span>
-                        <strong>2004年4月12日</strong>
-                    </div>
+                    <h2 class="profile-heading">PROFILE</h2>
 
-                    <div>
-                        <span>血液型</span>
-                        <strong>A型</strong>
-                    </div>
+                    <dl class="profile-list">
 
-                    <div>
-                        <span>出身地</span>
-                        <strong>東京都</strong>
-                    </div>
+                        <div class="profile-row">
+                            <dt>生年月日</dt>
+                            <dd>2012年8月12日</dd>
+                        </div>
 
-                    <div>
-                        <span>身長</span>
-                        <strong>160cm</strong>
-                    </div>
+                        <div class="profile-row">
+                            <dt>出身地</dt>
+                            <dd>東京都</dd>
+                        </div>
 
-                    <div>
-                        <span>ニックネーム</span>
-                        <strong>りこ、りこちゃん</strong>
-                    </div>
+                        <div class="profile-row">
+                            <dt>身長</dt>
+                            <dd>167cm</dd>
+                        </div>
 
-                    <div>
-                        <span>趣味</span>
-                        <strong>ピアノ、カフェ巡り</strong>
-                    </div>
+                        <div class="profile-row">
+                            <dt>ニックネーム</dt>
+                            <dd>りこ、りこちゃん</dd>
+                        </div>
 
-                    <div>
-                        <span>特技</span>
-                        <strong>作詞、人の顔と名前を覚えること</strong>
-                    </div>
+                        <div class="profile-row">
+                            <dt>趣味</dt>
+                            <dd>ピアノ、カフェ巡り</dd>
+                        </div>
 
-                    <div>
-                        <span>サイリウムカラー</span>
-                        <strong>ラベンダー × ホワイト</strong>
-                    </div>
+                        <div class="profile-row">
+                            <dt>特技</dt>
+                            <dd>作詞、人の顔と名前を覚えること</dd>
+                        </div>
+
+                        <div class="profile-row">
+                            <dt>サイリウムカラー</dt>
+                            <dd>
+                                <span class="penlight-color lavender"></span>
+                                ラベンダー
+                                <span class="color-cross">×</span>
+                                <span class="penlight-color white"></span>
+                                ホワイト
+                            </dd>
+                        </div>
+
+                    </dl>
 
                 </div>
 
@@ -105,79 +121,89 @@
 
 
         <!-- Q&A -->
-        <section class="member-qa">
+        <section class="profile-section member-question-section">
 
-            <div class="section-heading">
+            <div class="member-section-title">
                 <p>PERSONAL QUESTIONS</p>
                 <h2>Q&amp;A</h2>
             </div>
 
 
-            <div class="qa-list">
+            <div class="question-list">
 
-                <div class="qa-item">
-                    <p class="question">
+                <article class="question-item">
+
+                    <h3>
                         <span>Q.</span>
                         自分を一言で表すと？
-                    </p>
+                    </h3>
 
-                    <p class="answer">
+                    <p>
                         <span>A.</span>
                         責任感。
                     </p>
-                </div>
+
+                </article>
 
 
-                <div class="qa-item">
-                    <p class="question">
+                <article class="question-item">
+
+                    <h3>
                         <span>Q.</span>
                         好きな食べ物は？
-                    </p>
+                    </h3>
 
-                    <p class="answer">
+                    <p>
                         <span>A.</span>
                         いちごタルト。
                     </p>
-                </div>
+
+                </article>
 
 
-                <div class="qa-item">
-                    <p class="question">
+                <article class="question-item">
+
+                    <h3>
                         <span>Q.</span>
                         最近ハマっていることは？
-                    </p>
+                    </h3>
 
-                    <p class="answer">
+                    <p>
                         <span>A.</span>
                         夜のお散歩と、その日にあったことをノートに書くこと。
                     </p>
-                </div>
+
+                </article>
 
 
-                <div class="qa-item">
-                    <p class="question">
+                <article class="question-item">
+
+                    <h3>
                         <span>Q.</span>
                         自分の性格は？
-                    </p>
+                    </h3>
 
-                    <p class="answer">
+                    <p>
                         <span>A.</span>
-                        真面目に見られますが、意外と負けず嫌いです。
+                        真面目に見られることが多いですが、意外と負けず嫌いです。
                     </p>
-                </div>
+
+                </article>
 
 
-                <div class="qa-item">
-                    <p class="question">
+                <article class="question-item">
+
+                    <h3>
                         <span>Q.</span>
                         Fioraで叶えたい夢は？
-                    </p>
+                    </h3>
 
-                    <p class="answer">
+                    <p>
                         <span>A.</span>
                         たくさんの人の人生に寄り添えるグループになること。
                     </p>
-                </div>
+
+                </article>
 
             </div>
 
@@ -185,14 +211,14 @@
 
 
         <!-- メッセージ -->
-        <section class="member-message">
+        <section class="profile-section member-message-section">
 
-            <div class="section-heading">
+            <div class="member-section-title">
                 <p>MESSAGE</p>
                 <h2>メッセージ</h2>
             </div>
 
-            <div class="message-text">
+            <div class="member-message-text">
 
                 <p>
                     Fioraのキャプテンとして、メンバー一人ひとりの個性を大切にしながら、
@@ -214,32 +240,42 @@
         </section>
 
 
-        <!-- メンバー移動 -->
-        <section class="member-navigation">
+        <!-- ページ移動 -->
+        <nav class="member-page-navigation">
 
-            <a href="members.html" class="back-members">
-                MEMBERS一覧へ
+            <span class="member-page-link disabled">
+                ← PREV
+            </span>
+
+            <a href="members.html" class="members-list-link">
+                MEMBERS
             </a>
 
-            <a href="next-member.html" class="next-member">
-                NEXT MEMBER →
+            <!-- 次のページを作ったらファイル名を変更 -->
+            <a href="kaede-kurosaki.html" class="member-page-link">
+                NEXT →
             </a>
 
-        </section>
+        </nav>
 
     </main>
 
 
     <!-- フッター -->
-    <footer>
+    <footer class="site-footer">
 
         <p class="footer-logo">Fiora</p>
 
-        <p>
+        <p class="footer-company">
+            DRAKE ENTERTAINMENT
+        </p>
+
+        <p class="copyright">
             © Drake Entertainment. All Rights Reserved.
         </p>
 
     </footer>
 
 </body>
+
 </html>
