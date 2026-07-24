@@ -1312,3 +1312,25 @@ footer p + p {
     }
 
 }
+
+.tracklist li > div {
+    min-width: 0;
+}
+
+.tracklist li strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.tracklist li p {
+    margin: 0;
+
+    color: #777079;
+    font-size: 11px;
+    line-height: 1.8;
+}
